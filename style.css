@@ -1,0 +1,86 @@
+:root {
+--yellow: #f4d04e;
+--black: #111;
+--white: #fff;
+--gray: #6b6b6b;
+}
+
+
+body {
+margin: 0;
+font-family: 'Outfit', system-ui, sans-serif;
+background: var(--yellow);
+display: grid;
+place-items: center;
+min-height: 100vh;
+}
+
+
+main {
+width: 100%;
+max-width: 400px;
+}
+
+
+.card {
+background: var(--white);
+border: 1px solid var(--black);
+border-radius: 16px;
+padding: 20px;
+box-shadow: 8px 8px 0 var(--black);
+}
+
+
+.card-img {
+width: 100%;
+border-radius: 12px;
+margin-bottom: 20px;
+}
+
+
+.author {
+  display: flex;
+  align-items: center; 
+  gap: 12px;
+}
+
+.tag {
+display: inline-block;
+background: var(--yellow);
+padding: 4px 12px;
+border-radius: 4px;
+font-size: 14px;
+font-weight: 700;
+margin-bottom: 12px;
+}
+
+
+.date {
+font-size: 14px;
+margin: 0 0 12px;
+color: var(--black);
+}
+
+
+.title {
+font-size: 24px;
+font-weight: 700;
+margin: 0 0 12px;
+color: var(--black);
+cursor: pointer;
+transition: color 0.2s ease-in-out;
+}
+
+
+.title:hover {
+color: var(--yellow);
+}
+
+
+.desc {
+    color: var(--gray);
+}
+
+.avatar {
+    width: 10%;
+}
